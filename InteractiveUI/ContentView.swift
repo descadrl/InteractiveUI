@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var name = ""
+    //@State private var name2 = ""
+    // @State private var presentAlert = false
     @State private var textTitle = "What is your name?"
     var body: some View {
         VStack {
@@ -23,6 +25,7 @@ struct ContentView: View {
             Button("Submit Name") {
                 textTitle = "Welcome, \(name)!"
                 name = ""
+                // name2 = ""
             }
             .font(.title2)
             .buttonStyle(.borderedProminent)
